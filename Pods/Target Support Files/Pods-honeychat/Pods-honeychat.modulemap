@@ -1,0 +1,6 @@
+framework module Pods_honeychat {
+  umbrella header "Pods-honeychat-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,88 @@
+{
+  "images" : [
+    {
+      "filename" : "subscription_small.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    },
+    {
+      "filename" : "subscription_small-3.jpeg",
+      "idiom" : "universal",
+      "locale" : "zh-Hans",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "locale" : "zh-Hans",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "locale" : "zh-Hans",
+      "scale" : "3x"
+    },
+    {
+      "filename" : "subscription_small-5.jpeg",
+      "idiom" : "universal",
+      "locale" : "en",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "locale" : "en",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "locale" : "en",
+      "scale" : "3x"
+    },
+    {
+      "filename" : "subscription_small-6.jpeg",
+      "idiom" : "universal",
+      "locale" : "ja",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "locale" : "ja",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "locale" : "ja",
+      "scale" : "3x"
+    },
+    {
+      "filename" : "subscription_small-4.jpeg",
+      "idiom" : "universal",
+      "locale" : "ko",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "locale" : "ko",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "locale" : "ko",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "localizable" : true
+  }
+}
