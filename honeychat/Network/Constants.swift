@@ -18,7 +18,7 @@ let baseUrl2 = "https://api3.todayisyou.co.kr"
     
 let KCB_CER_URL = "http://www.quizmall.co.kr/cms/kcb_ci/today_app_cnfrm_popup2.php?in_tp_bit=0&hs_cert_rqst_caus_cd=99&form_name=formKcb"
 let PICTURE_REGIST_URL = "http://todayisyou.co.kr/app/bb/lookbook.php"
-let appType: String = "I1"
+let appType: String = "I3"
 let KakaoNativeAppKey = "4ed15923e57b40951d49163ec6250484"
 
 let NAVER_URL_SCHEME = "naverlogin.TodayIsYou"
