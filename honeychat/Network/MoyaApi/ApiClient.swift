@@ -68,6 +68,7 @@ extension API: TargetType {
     public var method: Moya.Method {
         switch self {
         case .upload,
+                .adultCheck,
                 .fetchPictorialList,
                 .pictureDetail,
                 .fetchRankList,
@@ -79,7 +80,7 @@ extension API: TargetType {
                 .deletePicture,
                 .sendRandomMessage:
             return .post
-        case .adultCheck, .checkSelfAuth, .updateSelfAuth:
+        case .checkSelfAuth, .updateSelfAuth:
             return .get
         }
     }
@@ -118,7 +119,9 @@ extension API: TargetType {
     public var task: Task {
         switch self {
         case .adultCheck:
-            return .requestPlain
+//            return .requestPlain
+            let param: [String: Any] = ["app_type": appType]
+            return .requestParameters(parameters: param, encoding: self.parameterEncoding)
         case let .fetchPictorialList(category, current_page, page_cnt):
             let param: [String : Any] = ["user_id":ShareData.ins.myId, "category":category, "current_page":current_page, "page_cnt":page_cnt]
             return .requestParameters(parameters:param, encoding: self.parameterEncoding)

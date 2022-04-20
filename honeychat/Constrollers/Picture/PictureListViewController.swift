@@ -148,7 +148,7 @@ extension PictureListViewController: UICollectionViewDelegate, UICollectionViewD
 //        #if DEBUG
 //        viewModel.checkAdult = false
 //        #endif
-        if viewModel.checkAdult == false {
+        if viewModel.isCheckedAdult == false {
             viewModel.serverAdultCheck()
         }
         else {

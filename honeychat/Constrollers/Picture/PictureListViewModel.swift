@@ -25,7 +25,7 @@ class PictureListViewModel {
     private var currentPage: Int = 1
     private let pageCnt = 30
     private var pageEnd: Bool = false
-    var checkAdult: Bool = false
+    var isCheckedAdult: Bool = false
     var selModel: PictureModel!
     
     init(category: Int) {
@@ -48,7 +48,7 @@ class PictureListViewModel {
                 if result.bb_list.count > 0 {
                     if self.currentPage == 1 {
                         self.listData = result.bb_list
-                        self.checkAdult = (result.sa_yn == "Y")
+                        self.isCheckedAdult = (result.sa_yn == "Y")
                     }
                     else {
                         self.listData.append(contentsOf: result.bb_list)
@@ -71,7 +71,7 @@ class PictureListViewModel {
     func checkSelfAuth() {
         ApiClient.ins.request(.checkSelfAuth(user_id: ShareData.ins.myId), CommonResModel.self) { result in
             if result.code == "000" {
-                self.checkAdult = true
+                self.isCheckedAdult = true
                 self.delegate?.resCheckSelfAuth()
             }
             else {
